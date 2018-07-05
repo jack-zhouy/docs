@@ -1,0 +1,19 @@
+协议:UDP
+服务器IP：120.78.241.67   端口：10005
+编码格式：ASC码
+字段说明：type：A-定位终端 B-托盘
+          code：设备序列号
+          lon：经度，例子112.876223
+          lat：维度，例子40.176223
+定位终端
+{type:A,code:xxx,lon:xxx,lat:xxx}
+
+
+托盘
+{type:B,code:xxx,lon:xxx,lat:xxx,weight:xxx,timestamp:xxxx}
+举例：
+{"type":"B","code":"123456789","lon":"102","lat":"8","weight":"50.0","timestamp":"2018-07-05 15:34:00"}
+{"type":"B","code":"123456789","lon":"102","lat":"8","weight":"40.0","timestamp":"2018-07-05 15:35:00"}
+{"type":"B","code":"123456789","lon":"102","lat":"8","weight":"30.0","timestamp":"2018-07-05 15:36:00"}
+
+{"type":"B","code":"123456789","lon":"102","lat":"8","weight":"1.0","timestamp":"2018-07-05 15:36:00"}
